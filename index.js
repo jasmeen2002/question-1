@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(express.static("public"));
 
 app.get("/", (req, res) => {
-  res.render("homepage");
+  res.render("createcard");
 });
 app.get("/people/:id", (req, res) => {
   res.render("people");
@@ -20,11 +20,8 @@ app.get("/:id/photos", (req, res) => {
   const id = req.params.id;
 });
 
-app.get('/createcard', (req,res) => {
-  res.render('createcard')
-})
 
-app.post('/createcard', (req,res) => {
+app.post('/', (req,res) => {
   let data = {
     name : req.body.name,
     about: req.body.about,
