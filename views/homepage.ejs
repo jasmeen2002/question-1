@@ -28,11 +28,11 @@
                     </div>
                     <div class="infos">
                       <span
-                        ><i class="fas fa-user-circle"></i>&nbsp;&nbsp;Armaan
-                        Dhanji</span
+                        ><i class="fas fa-user-circle"></i>&nbsp;&nbsp; <% userdata.name %>
+                       </span
                       ><span
-                        ><i class="fas fa-briefcase"></i>&nbsp;&nbsp;Full Stack
-                        Developer</span
+                        ><i class="fas fa-briefcase"></i>&nbsp;&nbsp; <% userdata.about %>
+                        </span
                       ><span
                         ><i class="fas fa-map-marker-alt"></i
                         >&nbsp;&nbsp;Vancouver, Canada</span
@@ -48,7 +48,7 @@
                 </div>
                 <div class="lx-card">
                   <div class="lx-row">
-                    <h1 class="title">Connect with Armaan</h1>
+                    <h1 class="title">Connect with <%= userdata.name %></h1>
                     <div class="mini-cards">
                       <a
                         class="has-dflex-center bs-md"

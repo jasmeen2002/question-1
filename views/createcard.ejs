@@ -4,7 +4,29 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/luxonauta/luxa@1.1/dist/expanded/luxa.css"
+  />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <div>
+      <form  method="POST">
+        <div>
+          <h3 > Create your devcard</h3>
+          <label for="name"></label>
+          <input type="name" class="form-control" id="name" name="name" placeholder="Enter your full namename"> <br>
+          <textarea type = "textarea" for = "about" name = "about" id = "textarea"> about me</textarea>
+        </div>
+        <div>
+          <label for="git_hub_url"></label>
+          <input type="git_hub_url" class="form-control" id="git hub url" name="git_hub_url" placeholder="Enter your git hub url"> <br>
+          <label for="twitter_url"></label>
+          <input type="twitter_url" class="form-control" id="twitter_url" name="twitter_url" placeholder="Enter your twitter url">
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">create site</button>
+      </form>
+    </div>
+  </body>
 </html>
